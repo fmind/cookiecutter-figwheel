@@ -1,5 +1,5 @@
+/res/public/cljs-out/
 /target/
 /.lein-*
 /.nrepl-*
-/res/public/cljs-out/
 .rebel_readline_history
