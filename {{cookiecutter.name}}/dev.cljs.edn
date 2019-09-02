@@ -1,0 +1,4 @@
+^{:css-dirs ["res/public/css"]
+  :watch-dirs ["test" "src"]
+  :auto-testing true}
+{:main {{cookiecutter.name}}.core}

@@ -1,0 +1,2 @@
+{:target-dir "res"
+ :open-file-command "emacsclient"}
