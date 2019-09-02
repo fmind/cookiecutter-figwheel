@@ -18,8 +18,8 @@
             "fig:build" ["trampoline" "run" "-m" "figwheel.main" "-b" "dev" "-r"]
             "fig:test"  ["run" "-m" "figwheel.main" "-co" "test.cljs.edn" "-m" {{cookiecutter.name}}.tests]}
 
-  :profiles {:dev {:githooks {:pre-commit ["lein cljsbuild test"
-                                           "lein cljfmt fix"
+  :profiles {:dev {:githooks {:pre-commit ["lein cljfmt fix"
+                                           "lein fig:test"
                                            "lein check"]}
                    :dependencies [[com.bhauman/figwheel-main "0.1.9"]
                                   [com.bhauman/rebel-readline-cljs "0.1.4"]]}}
